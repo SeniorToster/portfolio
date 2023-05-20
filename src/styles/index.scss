@@ -1,0 +1,10 @@
+@import "reset";
+
+
+.app {
+  background-color: #141414;
+  color: #ffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
