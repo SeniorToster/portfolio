@@ -1,30 +1,31 @@
+import { HiCake,HiLink,HiCalendar, HiBriefcase } from "react-icons/hi";
+
 import main from '../../config/main.json'
-
-interface Main {
-    banner: string
-}
-
-
+import styles from './Main.module.scss'
 
 export const Main = () => {
-    const {banner, name, avatar,nickname } = main
+    const {banner, name, avatar,nickname, description } = main
+
     return (
-        <div>
-            <img src={banner} alt='баннер'  />
-            <div>
-                <img src={avatar} alt='аватар'/>
-                <button>Send</button>
+        <>
+        <img className={styles.banner} src={banner} alt='баннер'/>
+        <div className={styles.wrapper}>
+
+            <img className={styles.avatar} src={avatar} alt='аватар'/>
+            <div className={styles.send}><button >Напиши</button></div>
+
+            <div className={styles.container_texts}>
+                <h2>{name}</h2>
+                <p className={styles.nickname}>@{nickname}</p>
+                <p>{description}</p>
             </div>
-            <div>
-                <div>{name}</div>
-                <div>{nickname}</div>
-            </div>
-            <div>
-                <div>icon</div>
-                <div>icon</div>
-                <div>icon</div>
-                <div>icon</div>
+            <div className={styles.icons}>
+                <div ><HiBriefcase/><p>свободный</p></div>
+                <div><HiLink/><a className={styles.link} href={'https://github.com/SeniorToster'}>/GitHub</a></div>
+                <div> <HiCake/><p>4 окт</p></div>
+                <div><HiCalendar/><p>программирую с авг 2022 г.</p></div>
             </div>
         </div>
+        </>
     );
 };

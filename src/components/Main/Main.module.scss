@@ -1,0 +1,83 @@
+.icons {
+  display: flex;
+  gap: 20px;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    color: #868e96;
+    font-weight: 400;
+
+    & > svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+
+.link {
+  font-weight: 700;
+  color: #1c94e4;
+}
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 4px solid #141414;
+    position: absolute;
+    top: -80px
+}
+
+
+.banner {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+
+.wrapper {
+  padding: 10px 20px 0;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+
+.send {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+
+  & > button {
+    color: #141414;
+    background-color: #fff;
+    cursor: pointer;
+    padding:  0 18px;
+    min-height: 38px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.container_texts {
+  & > h2 {
+    font-size: 30px;
+  }
+  & > p {
+    margin-bottom: 12px;
+  }
+}
+
+.nickname {
+  color: #868e96;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
