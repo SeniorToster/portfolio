@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "timestampAt": "16 августа 2022г.",
+    "hashtag":["JavaScript", "Html", "Sass"],
+    "title": "Project-1",
+    "text": "Первый проект по вёртске.\nВёрстка сайта для путешествий.",
+    "img": "https://camo.githubusercontent.com/2d03aba9b965f91eba3de47aec093ec1adb8fbcb76fc69280fc3c6ff1a43d6e6/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039393830303134393439343038333733342f696d6167652e706e67",
+    "siteLink": "https://pokedexpokemons.netlify.app/",
+    "githubLink": "https://github.com/SeniorToster/pokedex"
+  },
+  {
+    "id": "2",
+    "timestampAt": "18 апреля 2023г.",
+    "hashtag":["Html", "Scss", "JavaScript", "React", "Redux ToolKit"],
+    "title": "Pokedex",
+    "text": "Второй проект по вёртске.\nПриложение для поиска и детальной информации о покемонах",
+    "siteLink": "https://pokedexpokemons.netlify.app/",
+    "githubLink": "https://github.com/SeniorToster/pokedex",
+    "img": "https://camo.githubusercontent.com/6ef109405a8930f350b2a5f421d9c419eb156b9ef25dc306499ebfed5ccca0d1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039383639323339303433383538303336342f5a785a354a67415145415656316c746b684152496741524967415249674162635144394f47594736784938426741414141424a52553545726b4a6767672e706e67"
+  },
+  {
+    "id": "3",
+    "timestampAt": "16 августа 2022г.",
+    "hashtag":["JavaScript", "Html", "Sass"],
+    "title": "Project-1",
+    "siteLink": "https://pokedexpokemons.netlify.app/",
+    "githubLink": "https://github.com/SeniorToster/pokedex",
+    "text": "Первый проект по вёртске. \n\n Вёрстка сайта для путешествий.",
+    "img": "https://camo.githubusercontent.com/2d03aba9b965f91eba3de47aec093ec1adb8fbcb76fc69280fc3c6ff1a43d6e6/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039393830303134393439343038333733342f696d6167652e706e67"
+  }
+]

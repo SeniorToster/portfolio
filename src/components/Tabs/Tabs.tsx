@@ -1,62 +1,66 @@
-import {useState} from "react";
-import {PostsList} from "../PostsList/PostsList.tsx";
-import styles from './Tabs.module.scss'
+import React, { useState } from "react"
+
+import { PostsList } from "../PostsList/PostsList.tsx"
+import styles from "./Tabs.module.scss"
+import { type TabsProps } from "../../types"
+
+import projects from "../../config/projects.json"
+import posts from "../../config/posts.json"
 
 export const Tabs = () => {
-    const [currentTab, setCurrentTab] = useState('1');
-    console.log(currentTab)
-    const tabs = [
-        {
-            id: '1',
-            tabTitle: 'Новости',
-            content: <PostsList/>
-        },
-        {
-            id: '2',
-            tabTitle: 'Проекты',
-            content: ' 2.'
-        },
-        {
-            id: '3',
-            tabTitle: 'Обо мне',
-            content: 'Title 3',
-        },        {
-            id: '3',
-            tabTitle: 'Контакты',
-            content: 'Title 3',
-        },
-    ];
+    const [currentTab, setCurrentTab] = useState("1")
 
-    const handleTabClick = (e: any) :void => {
+    const tabsInit: TabsProps[] = [
+        {
+            id: "1",
+            tabTitle: "Новости",
+            content: <PostsList data={posts} />,
+        },
+        {
+            id: "2",
+            tabTitle: "Проекты",
+            content: <PostsList data={projects} />,
+        },
+        {
+            id: "3",
+            tabTitle: "Обо мне",
+            content: <PostsList data={projects} />,
+        },
+        {
+            id: "4",
+            tabTitle: "Контакты",
+            content: <PostsList data={projects} />,
+        },
+    ]
+
+    const handleTabClick = (e: React.MouseEvent): void => {
         setCurrentTab(e.currentTarget.id)
     }
 
     return (
         <div className={styles.container}>
             <div className={styles.tabs}>
-                {tabs.map(tab =>
+                {tabsInit.map((tab) => (
                     <div
                         className={`${styles.tab_item} ${currentTab === tab.id && styles.tab_item_active}`}
                         key={tab.id}
                         id={tab.id}
-                        onClick={handleTabClick}>
-                            <div>
-                                <span>
-                                    {tab.tabTitle}
-                                    {currentTab === tab.id && <div></div>}
-                                </span>
-
-                            </div>
+                        onClick={handleTabClick}
+                    >
+                        <div>
+                            <span>
+                                {tab.tabTitle}
+                                {currentTab === tab.id && <div></div>}
+                            </span>
+                        </div>
                     </div>
-                )}
+                ))}
             </div>
             <div>
-                {tabs.map((tab) =>
-                    <div key={tab.id}>
-                        {currentTab === `${tab.id}` && <div>{tab.content}</div>}
-                    </div>
-                )}
+                {tabsInit.map((tab) => (
+                    <div key={tab.id}>{currentTab === `${tab.id}` && <div>{tab.content}</div>}</div>
+                ))}
             </div>
         </div>
-    );
-};
+    )
+}

@@ -1,32 +1,32 @@
 [
   {
     "id": "1",
-    "timestamp_at": "1 августа 2022г.",
-    "hashtag":"\uD83D\uDE00 новое хобби",
+    "timestampAt": "1 августа 2022г.",
+    "hashtag":["\uD83D\uDE00 новое хобби"],
     "title": "Hello World!",
     "text": "Я начал постигать програмирование, это очень весело, и много чего нового можно узнать, круто!",
     "img": "https://vscode.ru/wp-content/uploads/2017/11/hello-world.jpg"
   },
   {
     "id": "2",
-    "timestamp_at": "1 августа 2022г.",
-    "hashtag":"\uD83D\uDE00 новое хобби",
+    "timestampAt": "1 августа 2022г.",
+    "hashtag":["\uD83D\uDE00 новое хобби"],
     "title": "Hello World!",
     "text": "Я начал постигать програмирование, это очень весело, и много чего нового можно узнать, круто!",
     "img": "https://vscode.ru/wp-content/uploads/2017/11/hello-world.jpg"
   },
   {
     "id": "3",
-    "timestamp_at": "1 августа 2022г.",
-    "hashtag":"\uD83D\uDE00 новое хобби",
+    "timestampAt": "1 августа 2022г.",
+    "hashtag":["\uD83D\uDE00 новое хобби"],
     "title": "Hello World!",
     "text": "Я начал постигать програмирование, это очень весело, и много чего нового можно узнать, круто!",
     "img": "https://vscode.ru/wp-content/uploads/2017/11/hello-world.jpg"
   },
   {
     "id": "4",
-    "timestamp_at": "1 августа 2022г.",
-    "hashtag":"\uD83D\uDE00 новое хобби",
+    "timestampAt": "1 августа 2022г.",
+    "hashtag":["\uD83D\uDE00 новое хобби"],
     "title": "Hello World!",
     "text": "Я начал постигать програмирование, это очень весело, и много чего нового можно узнать, круто!",
     "img": "https://vscode.ru/wp-content/uploads/2017/11/hello-world.jpg"

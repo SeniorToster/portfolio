@@ -1,9 +1,14 @@
 .wrapper {
-  padding:10px 0 ;
+  padding:16px;
   display: flex;
   gap:10px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out;
 
-
+  &:hover{
+    background-color: var(--hover-color);
+    transition: background-color 0.2s ease-in-out;
+  }
 
   &__avatar {
     & > img {
@@ -25,11 +30,11 @@
     align-items: baseline;
 
     & > span {
-      color: #868e96;
+      color: var(--second-color);
     }
 
     & > p {
-      color: #868e96;
+      color: var(--second-color);
       font-weight: 300;
       font-size: 14px;
     }
@@ -37,19 +42,31 @@
 
   &__hashtags {
     display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 
-    & > p {
+    & > div {
       font-weight: 700;
       font-size: 12px;
       padding: 6px 10px ;
-      background-color: #2f2f2f;
+      background-color: var(--button-color);
       border-radius: 20px;
+
+      display: flex;
+      gap: 4px;
+      align-items: center;
+
+      & > svg {
+        width: 16px;
+        height: 16px;
+      }
     }
 
   }
 
   &__text {
-    word-wrap: break-word
+    word-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   &__img {
@@ -61,14 +78,31 @@
   &__iconsbox {
     display: flex;
     justify-content: end;
-    color: #868e96;
+    gap: 8px;
 
-    & > div {
-      height: 30px;
-      width: 30px;
+   & > div {
+     color: var(--second-color);
+     cursor: not-allowed;
+   }
+
+    & > a {
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: var(--button-color);
+        color: var(--threm-color);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    & > div,a {
+      height: 40px;
+      width: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
+
 
       & > svg {
         height: 20px;

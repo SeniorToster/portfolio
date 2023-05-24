@@ -1,4 +1,4 @@
-import style from './Footer.module.scss'
+import style from "./Footer.module.scss"
 
 export const Footer = () => {
     return (
@@ -9,5 +9,5 @@ export const Footer = () => {
             <div>link</div>
             <div>link</div>
         </footer>
-    );
-};
+    )
+}

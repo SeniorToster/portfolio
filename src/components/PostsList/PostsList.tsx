@@ -1,10 +1,14 @@
-import posts from '../../config/posts.json'
-import {Post} from "../Post/Post.tsx";
+import { Post } from "../Post/Post.tsx"
+import { PostProps } from "../../types"
 
-export const PostsList = () => {
+import styles from "./PostsList.module.scss"
+
+export const PostsList = ({ data }: { data: PostProps[] }) => {
     return (
-        <div>
-            {posts.map(post => <Post key={post.id} {...post}/>) }
+        <div className={styles.wrapper}>
+            {data.map((post) => (
+                <Post key={post.id} {...post} />
+            ))}
         </div>
-    );
-};
+    )
+}
