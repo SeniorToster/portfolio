@@ -1,32 +1,83 @@
 [
-  {
-    "id": "1",
-    "timestampAt": "16 августа 2022г.",
-    "hashtag":["JavaScript", "Html", "Sass"],
-    "title": "Project-1",
-    "text": "Первый проект по вёртске.\nВёрстка сайта для путешествий.",
-    "img": "https://camo.githubusercontent.com/2d03aba9b965f91eba3de47aec093ec1adb8fbcb76fc69280fc3c6ff1a43d6e6/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039393830303134393439343038333733342f696d6167652e706e67",
-    "siteLink": "https://pokedexpokemons.netlify.app/",
-    "githubLink": "https://github.com/SeniorToster/pokedex"
-  },
+    {
+      "id": "7",
+      "timestampAt": "12 мая 2023г.",
+      "hashtag":["Html", "Scss", "AntDesign", "JavaScript", "React", "Redux ToolKit", "NodeJS", "ExpressJS","PostgresQL", "Sequelize"],
+      "title": "Fav Post",
+      "text": "FullStack приложение c возможностью регистрации и входа в свой аккаунт, для написания постов и лаков их.",
+      "siteLink": "http://authgit.1293863-co27853.tw1.ru/",
+      "githubLink": "https://github.com/SeniorToster/Fav-Post",
+      "img": "https://camo.githubusercontent.com/ea7cbcb5b5da95e19a2efb0f5242466d5a71d5f6380aa3da95f2bb4c6e734494/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313130373034373733303835303832383333392f696d6167652e706e67"
+    },
   {
     "id": "2",
     "timestampAt": "18 апреля 2023г.",
     "hashtag":["Html", "Scss", "JavaScript", "React", "Redux ToolKit"],
     "title": "Pokedex",
-    "text": "Второй проект по вёртске.\nПриложение для поиска и детальной информации о покемонах",
+    "text": "Приложение для поиска и детальной информации о покемонах",
     "siteLink": "https://pokedexpokemons.netlify.app/",
     "githubLink": "https://github.com/SeniorToster/pokedex",
     "img": "https://camo.githubusercontent.com/6ef109405a8930f350b2a5f421d9c419eb156b9ef25dc306499ebfed5ccca0d1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039383639323339303433383538303336342f5a785a354a67415145415656316c746b684152496741524967415249674162635144394f47594736784938426741414141424a52553545726b4a6767672e706e67"
   },
   {
+    "id": "4",
+    "timestampAt": "4 апреля 2023г.",
+    "hashtag":["Html", "Scss", "JavaScript", "React", "Redux ToolKit"],
+    "title": "React Todo List",
+    "text": "Front-end приложение Список дел и создание категорий для кажой задачи.",
+    "siteLink": "https://master--toster-todo-react.netlify.app/",
+    "githubLink": "https://github.com/SeniorToster/project-7_todo_react",
+    "img": "https://camo.githubusercontent.com/a8b66d317fa57a717cd86cf3dcb2880872d552663177e496624df20e45fb823d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039383935303034303233333435353631362f696d6167652e706e67"
+  },
+  {
     "id": "3",
+    "timestampAt": "22 марта 2023г.",
+    "hashtag":["NodeJS", "ExpressJS","PostgresQL", "Sequelize", "discordJS"],
+    "title": "Discord Bot",
+    "text": "Дискорд бот с множетсвом функций, прендзначен в основном для голосования фильмов и выставления их на голосования.",
+    "siteLink": "https://discord.com/invite/d59DpKbscb",
+    "video": "https://www.youtube.com/embed/qt2twvVAfBg"
+
+  },
+  {
+    "id": "3",
+    "timestampAt": "13 января 2023г.",
+    "hashtag":["Html", "Scss", "JavaScript", "React", "ReactRouter"],
+    "title": "Wave.tv",
+    "text": "Front-end приложение для поиска и просмотра фильмов.",
+    "siteLink": "https://wave-tv.netlify.app/",
+    "githubLink": "https://github.com/SeniorToster/Wave.tv-films-react",
+    "img": "https://camo.githubusercontent.com/da677ecb84001e5f9fc2f07eb95a141c509b998ed7a5ea5222230b6c29b11666/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039383639323938373733363832353939362f696d6167652e706e67"
+  },
+  {
+    "id": "5",
+    "timestampAt": "14 октября 2023г.",
+    "hashtag":["Html", "Scss", "JavaScript"],
+    "title": "Arrays and Methods",
+    "text": "Сайт для демострации работы некоторых методов массива JavaScript\"a",
+    "siteLink": "https://seniortoster.github.io/project-6-Arrays-and-Methods/",
+    "githubLink": "https://github.com/SeniorToster/project-6-Arrays-and-Methods",
+    "img": "https://camo.githubusercontent.com/81a896eea668bc4f48f9fb619dc26068c3c8d6e4a9dad7b6a92436e49c48462b/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039393433363438313930383537323230312f696d6167652e706e67"
+  },
+  {
+    "id": "6",
+    "timestampAt": "12 октября 2023г.",
+    "hashtag":["Html", "Scss", "JavaScript"],
+    "title": "TimerJS",
+    "text": "приложение Таймер",
+    "siteLink": "https://seniortoster.github.io/project-5-Timer/",
+    "githubLink": "https://github.com/SeniorToster/project-5-Timer",
+    "img": "https://camo.githubusercontent.com/cd9bfde0a1f731df12791a8ae744b20bd2b23393f87e0423e0dc50657c50264c/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313130303532313230363337303739353533302f696d6167652e706e67"
+  }
+,
+  {
+    "id": "1",
     "timestampAt": "16 августа 2022г.",
     "hashtag":["JavaScript", "Html", "Sass"],
-    "title": "Project-1",
+    "title": "MiTravel",
+    "text": "Вёрстка сайта для путешествий.",
+    "img": "https://camo.githubusercontent.com/2d03aba9b965f91eba3de47aec093ec1adb8fbcb76fc69280fc3c6ff1a43d6e6/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039393830303134393439343038333733342f696d6167652e706e67",
     "siteLink": "https://pokedexpokemons.netlify.app/",
-    "githubLink": "https://github.com/SeniorToster/pokedex",
-    "text": "Первый проект по вёртске. \n\n Вёрстка сайта для путешествий.",
-    "img": "https://camo.githubusercontent.com/2d03aba9b965f91eba3de47aec093ec1adb8fbcb76fc69280fc3c6ff1a43d6e6/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313037313938383330323937313934343938322f313039393830303134393439343038333733342f696d6167652e706e67"
+    "githubLink": "https://github.com/SeniorToster/pokedex"
   }
 ]

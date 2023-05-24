@@ -1,4 +1,4 @@
-import { HiCake, HiLink, HiCalendar, HiBriefcase } from "react-icons/hi"
+import { HiCake, HiLink, HiCalendar, HiBriefcase, HiBadgeCheck } from "react-icons/hi"
 
 import main from "../../config/main.json"
 import styles from "./Main.module.scss"
@@ -11,11 +11,13 @@ export const Main = () => {
             <img className={styles.banner} src={banner} alt="баннер" />
             <div className={styles.wrapper}>
                 <img className={styles.avatar} src={avatar} alt="аватар" />
-                <div className={styles.send}>
+                <a href="mailto:seralek04@gmail.com" className={styles.send}>
                     <button>Напиши</button>
-                </div>
+                </a>
                 <div className={styles.container_texts}>
-                    <h2>{name}</h2>
+                    <h2>
+                        {name} <HiBadgeCheck />
+                    </h2>
                     <h4 className={styles.nickname}>@{nickname}</h4>
                     <p>{description}</p>
                 </div>

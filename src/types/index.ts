@@ -16,6 +16,7 @@ export interface PostProps {
     text: string
     title?: string
     img: string
+    video: string
     hashtag: string[]
     siteLink?: string
     githubLink?: string

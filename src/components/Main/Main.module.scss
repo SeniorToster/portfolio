@@ -71,7 +71,10 @@
 
 .container_texts {
   & > h2 {
-    font-size: 30px;
+    font-size: 28px;
+    & > svg {
+      color: var(--threm-color)
+    }
   }
   & > p {
     margin-bottom: 12px;
