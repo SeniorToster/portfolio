@@ -6,6 +6,8 @@ import { type TabsProps } from "../../types"
 
 import projects from "../../config/projects.json"
 import posts from "../../config/posts.json"
+import { About } from "../About/About.tsx"
+import { Contacts } from "../Contacts/Contacts.tsx"
 
 export const Tabs = () => {
     const [currentTab, setCurrentTab] = useState("1")
@@ -24,12 +26,12 @@ export const Tabs = () => {
         {
             id: "3",
             tabTitle: "Обо мне",
-            content: <PostsList data={projects} />,
+            content: <About />,
         },
         {
             id: "4",
             tabTitle: "Контакты",
-            content: <PostsList data={projects} />,
+            content: <Contacts />,
         },
     ]
 

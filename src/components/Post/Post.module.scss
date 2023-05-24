@@ -72,6 +72,7 @@
   &__img {
     width: 100%;
     object-fit: cover;
+    border: 1px solid var(--button-color);
     border-radius: 20px;
   }
 

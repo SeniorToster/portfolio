@@ -1,0 +1,24 @@
+.wrapper {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--button-color);
+    }
+    & > svg {
+      & > path {
+        stroke: var(--first-color);
+      }
+      width: 26px;
+      height: 26px;
+
+    }
+
+}

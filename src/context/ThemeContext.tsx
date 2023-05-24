@@ -1,7 +1,7 @@
 import { createContext, FC, useState } from "react"
 import { ChildrenProps } from "../types"
 
-enum Theme {
+export enum Theme {
     DARK = "dark",
     LIGHT = "light",
 }

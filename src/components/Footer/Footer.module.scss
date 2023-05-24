@@ -1,6 +1,33 @@
 .footer {
   flex: 0 0 auto;
   margin: 0 auto;
+  padding: 16px 0;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 16px;
+
+  &__wrapperIcons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__corp {
+    text-align: center;
+    font-weight: 300;
+
+    & > p > span {
+      color: var(--threm-color);
+      font-weight: 500;
+    }
+  }
+
+  &__copy {
+    background-color: var(--threm-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+
+    font-weight: 600;
+  }
 }

@@ -47,12 +47,12 @@ export const Post = ({ title, text, img, timestampAt, hashtag, siteLink, githubL
                 <div className={styles.wrapper__iconsbox}>
                     {githubLink && (
                         <a href={githubLink} target="_blank">
-                            <SiGithub />
+                            <SiGithub title={"Репозиторий проекта"} />
                         </a>
                     )}
                     {siteLink && (
                         <a href={siteLink} target="_blank">
-                            <HiLink />
+                            <HiLink title={"Демо проекта"} />
                         </a>
                     )}
                     <div>
