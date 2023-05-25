@@ -13,10 +13,10 @@ export interface TabsProps {
 export interface PostProps {
     id: string
     timestampAt: string
-    text: string
+    text?: string
     title?: string
-    img: string
-    video: string
+    img?: string
+    video?: string
     hashtag: string[]
     siteLink?: string
     githubLink?: string

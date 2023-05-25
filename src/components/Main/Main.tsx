@@ -10,7 +10,7 @@ export const Main = () => {
         <>
             <img className={styles.banner} src={banner} alt="баннер" />
             <div className={styles.wrapper}>
-                <img className={styles.avatar} src={avatar} alt="аватар" />
+                <img unselectable="on" className={styles.avatar} src={avatar} alt="аватар" />
                 <a href="mailto:seralek04@gmail.com" className={styles.send}>
                     <button>Напиши</button>
                 </a>
@@ -21,6 +21,7 @@ export const Main = () => {
                     <h4 className={styles.nickname}>@{nickname}</h4>
                     <p>{description}</p>
                 </div>
+
                 <div className={styles.icons}>
                     <div>
                         <HiBriefcase />
