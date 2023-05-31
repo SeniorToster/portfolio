@@ -1,0 +1,9 @@
+{
+  "title": "Привет, я FrontEnd Разработчик",
+  "text": "Меня зовут Алекасндр, и я с августа 2023 года, начал постигать программирование в сфере FrontEnd\n Мой основной и пока едиственный язык програмирования это",
+  "BaseLang": "JavaScript",
+  "FrontEnd": ["Html","Css", "Scss", "TypeScript", "React", "Redux ToolKit", "ReactRouter","Axios", "AntDesign", "Mui", "WebPack" ],
+  "BackEnd": ["NodeJS", "ExpressJS","Sequelize","PostgresQL", "SQLite", "JWT"],
+  "DevOps": ["GitHub", "Git", "Docker", "Nginx"],
+  "Other": ["Npm","PostMan", "Figma", "Photoshop", "VSCode", "IDEA" ]
+}
