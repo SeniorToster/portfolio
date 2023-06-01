@@ -29,7 +29,7 @@ export const Main = () => {
                     </div>
                     <div>
                         <HiLink />
-                        <a className={styles.link} href={"https://github.com/SeniorToster"}>
+                        <a className={styles.link} target="_blank" href={"https://github.com/SeniorToster"}>
                             /GitHub
                         </a>
                     </div>

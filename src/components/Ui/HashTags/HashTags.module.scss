@@ -1,0 +1,41 @@
+.wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+
+      &_l {
+            gap: 10px;
+      }
+      &_m {
+            gap: 6px;
+      }
+}
+
+
+.hashtag {
+      font-weight: 700;
+      background-color: var(--button-color);
+      border-radius: 20px;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+
+      &_l {
+            font-size: 14px;
+            padding: 8px 14px ;
+            gap: 6px;
+            & > svg {
+                  width: 20px;
+                  height: 20px;
+            }
+      }
+      &_m {
+            font-size: 12px;
+            padding: 6px 10px;
+            gap: 4px;
+            & > svg {
+                  width: 16px;
+                  height:16px;
+            }
+      }
+}
