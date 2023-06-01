@@ -1,0 +1,9 @@
+.wrapper {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & > div >h3 {
+    margin-bottom: 8px;
+  }
+}

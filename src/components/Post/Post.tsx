@@ -29,7 +29,6 @@ export const Post = ({ video, title, text, img, timestampAt, hashtag, siteLink, 
                     <iframe
                         width="100%"
                         height="300px"
-                        frameBorder={0}
                         className={styles.wrapper__img}
                         src="https://www.youtube.com/embed/qt2twvVAfBg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
