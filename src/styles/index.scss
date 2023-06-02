@@ -4,9 +4,10 @@
 @import "themes/light";
 
 
+
 .app {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 
   background-color: var(--bg-color);
   color: var(--first-color);
@@ -14,4 +15,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  --width: 720px;
+  --container-width: calc(var(--width) - 14%);
+
+  --space-size-l: 32px;
+  --space-size-m: 16px;
+  --space-size-s: 8px;
+  --space-size-xs: 4px;
+
 }

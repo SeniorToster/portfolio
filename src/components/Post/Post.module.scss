@@ -1,5 +1,5 @@
 .wrapper {
-  padding:16px;
+  padding:var(--space-size-m);
   display: flex;
   gap:10px;
   border-radius: 20px;
@@ -43,6 +43,7 @@
   &__text {
     word-wrap: break-word;
     white-space: pre-wrap;
+    margin-bottom: var(--space-size-m);
   }
 
   &__img {
@@ -55,7 +56,7 @@
   &__iconsbox {
     display: flex;
     justify-content: end;
-    gap: 8px;
+    gap: var(--space-size-s);
 
    & > div {
      color: var(--second-color);

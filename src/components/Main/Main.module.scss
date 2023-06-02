@@ -1,89 +1,70 @@
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 16px;
-  row-gap: 8px;
-  & > div {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    font-size: 14px;
-    color: var(--second-color);
-    font-weight: 400;
-
-    & > svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
+.banner {
+    width: 100%;
+    height: 20vh;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+    user-select: none;
 }
 
 
-.link {
-  font-weight: 700;
-  color: var(--threm-color);
-}
+.wrapper {
+  padding: var(--space-size-s) var(--space-size-m) 0;
+  margin: 0 auto var(--space-size-m);
+  position: relative;
+  max-width:var(--container-width);
 
-
-.avatar {
+  &__avatar {
     width: 150px;
     height: 150px;
     border-radius: 100%;
     border: 4px solid var(--bg-color);
     position: absolute;
     top: -80px
-}
-
-
-.banner {
-  width: 100%;
-  height: 20vh;
-  max-height: 250px;
-  object-fit: cover;
-  object-position: bottom;
-  user-select: none;
-}
-
-
-.wrapper {
-  padding: 10px 16px 0;
-  margin-bottom: 16px;
-  position: relative;
-}
-
-
-.send {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  margin-bottom: 30px;
-
-  & > button {
-    color: var(--bg-color);
-    background-color: var(--first-color);
-    cursor: pointer;
-    padding:  0 18px;
-    min-height: 38px;
-    border-radius: 30px;
-    font-weight: 700;
-    font-size: 16px;
   }
-}
 
-.container_texts {
-  & > h2 {
-    font-size: 28px;
-    & > svg {
-      color: var(--threm-color)
+  &__send {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: var(--space-size-l);
+
+    & > button {
+      color: var(--bg-color);
+      background-color: var(--first-color);
+      cursor: pointer;
+      padding:  0 var(--space-size-m);
+      min-height: 38px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 16px;
     }
   }
-  & > p {
-    margin-bottom: 12px;
+
+  &__fullName {
+    font-size: 28px;
+    & > svg {
+    color: var(--threm-color)
+    }
+  }
+
+  &__nickname {
+    color: var(--second-color);
+    font-weight: 400;
+    margin-bottom: var(--space-size-s);
+  }
+
+  &__text {
+      margin-bottom: var(--space-size-m);
   }
 }
 
-.nickname {
-  color: var(--second-color);
-  font-weight: 400;
-  margin-bottom: 12px;
-}
+
+
+
+
+
+
+
+
+

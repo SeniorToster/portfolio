@@ -1,9 +1,10 @@
 .wrapper {
-  padding: 16px;
+  padding: var(--space-size-m);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--space-size-m);
+
   & > div >h3 {
-    margin-bottom: 8px;
+    margin-bottom: var(--space-size-s);
   }
 }

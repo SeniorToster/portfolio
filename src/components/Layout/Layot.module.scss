@@ -1,5 +1,6 @@
 .container {
-  max-width: 620px;
+  max-width:100%;
+  width: var(--width);
   margin:  0 auto;
   flex: 1 0 auto;
 }

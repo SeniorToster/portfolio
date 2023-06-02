@@ -3,5 +3,21 @@
   "name": "Александр Рубанец",
   "nickname": "toster",
   "avatar": "https://avatars.githubusercontent.com/u/11602891?s=400&u=532379e772d18887d0261496e11755059271fc96&v=4",
-  "description": "привет моя страсть это программирование, и я буду добиваться цели, ибо программирование цель моей жизни"
+  "description": "привет моя страсть это программирование, и я буду добиваться цели, ибо программирование цель моей жизни",
+  "info": [
+    {
+      "name": "work",
+      "label": "свободный"
+    },
+    {
+      "name": "link",
+      "link": "https://github.com/SeniorToster",
+      "label": "/GitHub"
+    },{
+      "name": "birthday",
+      "label": "4 окт"
+    },{
+      "name": "calender",
+      "label": "программирую с авг 2022 г."
+    }]
 }
