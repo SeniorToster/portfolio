@@ -1,14 +1,17 @@
 import about from "../../config/about.json"
 import { HashTags } from "../Ui/HashTags/HashTags.tsx"
 import styles from "./About.module.scss"
+import { Picture } from "../Ui/Picture/Picture.tsx"
 export const About = () => {
-    const { title, text, FrontEnd, BackEnd, DevOps, Other, BaseLang } = about
+    const { title, text, FrontEnd, BackEnd, DevOps, Other, BaseLang, img } = about
     return (
         <div className={styles.wrapper}>
             <h2>{title}</h2>
             <p>{text}</p>
+            <Picture img={img} />
             <div>
                 <h3>Основной язык программирования</h3>
+
                 <HashTags hashtags={BaseLang} size="l" />
             </div>
             <div>

@@ -1,0 +1,10 @@
+.wrapper {
+  padding: var(--space-size-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-size-m);
+
+  & > div >h3 {
+    margin-bottom: var(--space-size-s);
+  }
+}

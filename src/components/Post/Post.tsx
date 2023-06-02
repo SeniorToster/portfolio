@@ -5,6 +5,7 @@ import main from "../../config/main.json"
 import styles from "./Post.module.scss"
 import { type PostProps } from "../../types"
 import { HashTags } from "../Ui/HashTags/HashTags.tsx"
+import { Picture } from "../Ui/Picture/Picture.tsx"
 
 export const Post = ({ video, title, text, img, timestampAt, hashtag, siteLink, githubLink }: PostProps) => {
     const { avatar, name } = main
@@ -23,17 +24,7 @@ export const Post = ({ video, title, text, img, timestampAt, hashtag, siteLink, 
                 <HashTags hashtags={hashtag} />
                 {title && <h2>{title}</h2>}
                 <p className={styles.wrapper__text}>{text}</p>
-                {img && <img className={styles.wrapper__img} src={img} loading={"lazy"} alt="text" />}
-                {video && (
-                    <iframe
-                        width="100%"
-                        height="300px"
-                        className={styles.wrapper__img}
-                        src="https://www.youtube.com/embed/qt2twvVAfBg"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                    ></iframe>
-                )}
+                <Picture video={video} img={img} />
                 <div className={styles.wrapper__iconsbox}>
                     {githubLink && (
                         <a href={githubLink} target="_blank">

@@ -5,7 +5,7 @@ import styles from "./Main.module.scss"
 import { InfoIcons, Info } from "../Ui/InfoIcons/InfoIcons.tsx"
 
 export interface MainJSON {
-    banner: string
+    banner: string[]
     name: string
     nickname: string
     avatar: string
@@ -17,9 +17,9 @@ export const Main = () => {
     const { banner, name, avatar, nickname, description, info } = main as MainJSON
     return (
         <>
-            <img className={styles.banner} src={banner} alt="баннер" />
+            <img className={styles.banner} src={banner[0]} alt="баннер" />
             <div className={styles.wrapper}>
-                <img unselectable="on" className={styles.wrapper__avatar} src={avatar} alt="аватар" />
+                <img className={styles.wrapper__avatar} src={avatar} alt="аватар" />
                 <a href="mailto:seralek04@gmail.com" className={styles.wrapper__send}>
                     <button>Напиши</button>
                 </a>

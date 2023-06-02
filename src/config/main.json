@@ -1,5 +1,11 @@
 {
-  "banner": "https://media.tenor.com/AsF12GHeFn0AAAAC/scaler-create-impact.gif",
+  "banner": ["https://media.tenor.com/AsF12GHeFn0AAAAC/scaler-create-impact.gif",
+    "https://media.tenor.com/EK_plqlM_D4AAAAd/dan-shiffman-coding.gif",
+    "https://media.tenor.com/GOj9ZF_-ZOcAAAAS/cat.gif",
+    "https://media.tenor.com/U7onEi32XlIAAAAS/spongebob-development.gif",
+    "https://media.tenor.com/G5cXavmG-fcAAAAC/programming-meme.gif",
+    "https://media.tenor.com/QrqIE5XUDDwAAAAd/programmer-bug.gif"
+  ],
   "name": "Александр Рубанец",
   "nickname": "toster",
   "avatar": "https://avatars.githubusercontent.com/u/11602891?s=400&u=532379e772d18887d0261496e11755059271fc96&v=4",
