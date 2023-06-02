@@ -1,47 +1,36 @@
-import { HiCake, HiLink, HiCalendar, HiBriefcase, HiBadgeCheck } from "react-icons/hi"
+import { HiBadgeCheck } from "react-icons/hi"
 
 import main from "../../config/main.json"
 import styles from "./Main.module.scss"
+import { InfoIcons, Info } from "../Ui/InfoIcons/InfoIcons.tsx"
+
+export interface MainJSON {
+    banner: string
+    name: string
+    nickname: string
+    avatar: string
+    description: string
+    info: Info[]
+}
 
 export const Main = () => {
-    const { banner, name, avatar, nickname, description } = main
-
+    const { banner, name, avatar, nickname, description, info } = main as MainJSON
     return (
         <>
             <img className={styles.banner} src={banner} alt="баннер" />
             <div className={styles.wrapper}>
-                <img unselectable="on" className={styles.avatar} src={avatar} alt="аватар" />
-                <a href="mailto:seralek04@gmail.com" className={styles.send}>
+                <img unselectable="on" className={styles.wrapper__avatar} src={avatar} alt="аватар" />
+                <a href="mailto:seralek04@gmail.com" className={styles.wrapper__send}>
                     <button>Напиши</button>
                 </a>
-                <div className={styles.container_texts}>
-                    <h2>
+                <div>
+                    <h2 className={styles.wrapper__fullName}>
                         {name} <HiBadgeCheck />
                     </h2>
-                    <h4 className={styles.nickname}>@{nickname}</h4>
-                    <p>{description}</p>
+                    <h4 className={styles.wrapper__nickname}>@{nickname}</h4>
+                    <p className={styles.wrapper__text}>{description}</p>
                 </div>
-
-                <div className={styles.icons}>
-                    <div>
-                        <HiBriefcase />
-                        <p>свободный</p>
-                    </div>
-                    <div>
-                        <HiLink />
-                        <a className={styles.link} target="_blank" href={"https://github.com/SeniorToster"}>
-                            /GitHub
-                        </a>
-                    </div>
-                    <div>
-                        <HiCake />
-                        <p>4 окт</p>
-                    </div>
-                    <div>
-                        <HiCalendar />
-                        <p>программирую с авг 2022 г.</p>
-                    </div>
-                </div>
+                <InfoIcons infoArray={info} />
             </div>
         </>
     )

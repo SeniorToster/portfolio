@@ -20,9 +20,8 @@ export const Post = ({ video, title, text, img, timestampAt, hashtag, siteLink, 
                     <span>•</span>
                     <p>{timestampAt}</p>
                 </div>
-
-                {title && <h2>{title}</h2>}
                 <HashTags hashtags={hashtag} />
+                {title && <h2>{title}</h2>}
                 <p className={styles.wrapper__text}>{text}</p>
                 {img && <img className={styles.wrapper__img} src={img} loading={"lazy"} alt="text" />}
                 {video && (

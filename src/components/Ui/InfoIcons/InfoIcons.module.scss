@@ -1,0 +1,25 @@
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-size-m);
+  row-gap: var(--space-size-s);
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-size-xs);
+    font-size: 15px;
+    color: var(--second-color);
+    font-weight: 400;
+
+    & > svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    color: var(--threm-color);
+  }
+}
