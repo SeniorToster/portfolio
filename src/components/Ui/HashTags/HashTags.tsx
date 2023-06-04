@@ -2,6 +2,7 @@ import {
     SiAdobephotoshop,
     SiAntdesign,
     SiAxios,
+    SiCodewars,
     SiCss3,
     SiDiscord,
     SiDocker,
@@ -9,7 +10,9 @@ import {
     SiFigma,
     SiGit,
     SiGithub,
+    SiGmail,
     SiHtml5,
+    SiInstagram,
     SiIntellijidea,
     SiJavascript,
     SiJsonwebtokens,
@@ -25,13 +28,17 @@ import {
     SiSass,
     SiSequelize,
     SiSqlite,
+    SiTelegram,
+    SiTwitch,
     SiTypescript,
     SiVisualstudiocode,
+    SiVk,
     SiWebpack,
 } from "react-icons/si"
 
 import styles from "./HashTags.module.scss"
 import { FC } from "react"
+import { useMessage } from "../../../hooks/useMessage/useMessage.tsx"
 
 const icons = [
     { icon: <SiJavascript color={"#efd81d"} />, name: "JavaScript" },
@@ -64,26 +71,68 @@ const icons = [
     { icon: <SiAdobephotoshop color={"#2176b8"} />, name: "Photoshop" },
     { icon: <SiVisualstudiocode color={"#23a0e6"} />, name: "VSCode" },
     { icon: <SiIntellijidea />, name: "Idea" },
-]
-type Size = "m" | "l"
 
+    { icon: <SiDiscord color={"#525de9"} />, name: "Discord" },
+    { icon: <SiVk color={"#0071f2"} />, name: "VK" },
+    { icon: <SiTelegram color={"#27a0de"} />, name: "Telegram" },
+    { icon: <SiGmail color={"#b83728"} />, name: "Gmail" },
+    { icon: <SiInstagram />, name: "Instagram" },
+    { icon: <SiTwitch color={"#8a42f2"} />, name: "Twitch" },
+    { icon: <SiDiscord color={"#525de9"} />, name: "My Discord Server" },
+    { icon: <SiCodewars color={"#a8331c"} />, name: "CodeWars" },
+]
+
+type Size = "m" | "l"
+type Hashtag = { name: string; copy?: boolean; link?: string }
+interface HashTagProps {
+    hashtag: Hashtag
+    size?: Size
+    link?: boolean
+}
 interface HashTagsProps {
-    hashtags: string[]
+    hashtags: Hashtag[]
     size?: Size
 }
 
 export const HashTags: FC<HashTagsProps> = ({ hashtags, size = "m" }) => {
     return (
         <div className={`${styles.wrapper} ${styles[`wrapper_${size}`]}`}>
-            {hashtags.map((hash) => {
-                const icon = icons.find((icon) => icon.name === hash)
-                return (
-                    <div key={hash} className={`${styles.hashtag} ${styles[`hashtag_${size}`]}`}>
-                        {icon && icon.icon}
-                        {hash}
-                    </div>
-                )
-            })}
+            {hashtags.map((hash) => (
+                <HashTag key={hash.name} hashtag={hash} size={size} />
+            ))}
+        </div>
+    )
+}
+
+export const HashTag: FC<HashTagProps> = ({ hashtag, size = "m" }) => {
+    const icon = icons.find((icon) => icon.name === hashtag.name)
+    const messageHandle = useMessage()
+    if (hashtag?.link) {
+        if (hashtag?.copy) {
+            return (
+                <div
+                    onClick={() => messageHandle(hashtag.link ?? "текст")}
+                    className={`${styles.hashtag} ${styles[`hashtag_${size}`]}
+                    ${styles.pointer}
+                    `}
+                >
+                    {icon && icon.icon}
+                    {hashtag.name}
+                </div>
+            )
+        }
+        return (
+            <a href={hashtag.link} target="_blank" className={`${styles.hashtag} ${styles[`hashtag_${size}`]}`}>
+                {icon && icon.icon}
+                {hashtag.name}
+            </a>
+        )
+    }
+
+    return (
+        <div className={`${styles.hashtag} ${styles[`hashtag_${size}`]}`}>
+            {icon && icon.icon}
+            {hashtag.name}
         </div>
     )
 }

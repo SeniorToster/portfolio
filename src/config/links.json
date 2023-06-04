@@ -2,6 +2,37 @@
   "title": "Свяжитесь со мной!",
   "text": "Здесь вы можете увидеть немного информации о моих социальных сетях и где меня найти.",
 
-  "social": ["Discord","VK", "Telegram", "Gmail", "Instagram", "Twitch", "My Discord Server"],
-  "program": ["GitHub"]
+  "social": [
+    {
+      "name": "Discord",
+      "link": "Госпожа  Тостерита#8888",
+      "copy": true
+    },{
+      "name": "VK",
+      "link": "https://vk.com/id150518422"
+    },{
+      "name": "Telegram",
+      "link": "https://t.me/Toctep04"
+    },{
+      "name": "Gmail",
+      "link": "seralek04@gmail.com",
+      "copy": true
+    },{
+      "name": "Instagram",
+      "link": "https://www.instagram.com/"
+    },{
+      "name": "Twitch",
+      "link": "https://www.twitch.tv/toctep"
+    },{
+      "name": "My Discord Server",
+      "link": "https://discord.com/invite/d59DpKbscb"
+    }],
+  "program": [
+    {
+    "name": "GitHub",
+    "link": "https://github.com/SeniorToster"
+  },{
+    "name": "CodeWars",
+    "link": "https://www.codewars.com/users/Toctep"
+  }]
 }
