@@ -2,6 +2,7 @@ import style from "./Footer.module.scss"
 import { IconWrapper } from "../Ui/IconWrapper/IconWrapper.tsx"
 import { useMessage } from "../../hooks/useMessage/useMessage.tsx"
 import { footer } from "../../config/links.json"
+import { nickname } from "../../config/main.json"
 import { icons } from "../../helpes/iconsArr.tsx"
 
 export const Footer = () => {
@@ -25,7 +26,7 @@ export const Footer = () => {
             </div>
             <div className={style.footer__corp}>
                 <p>
-                    made by a <span>Toster</span>
+                    made by a <span>{nickname[0].toUpperCase() + nickname.slice(1)}</span>
                 </p>
                 <p>©{new Date().getFullYear()}</p>
             </div>
