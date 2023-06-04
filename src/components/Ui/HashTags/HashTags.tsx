@@ -4,7 +4,7 @@ import { FC } from "react"
 import { useMessage } from "../../../hooks/useMessage/useMessage.tsx"
 
 type Size = "m" | "l"
-type Hashtag = { name: string; copy?: boolean; link?: string }
+export type Hashtag = { name: string; copy?: boolean; link?: string }
 interface HashTagProps {
     hashtag: Hashtag
     size?: Size

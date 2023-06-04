@@ -1,4 +1,5 @@
 import type React from "react"
+import { Hashtag } from "../components/Ui/HashTags/HashTags.tsx"
 
 export interface ChildrenProps {
     children: React.ReactNode
@@ -17,7 +18,7 @@ export interface PostProps {
     title?: string
     img?: string
     video?: string
-    hashtag: string[]
+    hashtag: Hashtag[]
     siteLink?: string
     githubLink?: string
 }
