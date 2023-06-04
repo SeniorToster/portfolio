@@ -34,5 +34,20 @@
   },{
     "name": "CodeWars",
     "link": "https://www.codewars.com/users/Toctep"
-  }]
+  }],
+  "footer": [{
+      "name": "Gmail",
+      "link": "seralek04@gmail.com",
+      "copy": true
+    },{
+      "name": "Discord",
+      "link": "Госпожа  Тостерита#8888",
+      "copy": true
+    },{
+      "name": "VK",
+      "link": "https://vk.com/id150518422"
+    },{
+      "name": "GitHub",
+      "link": "https://github.com/SeniorToster"
+    }]
 }
