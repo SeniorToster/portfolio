@@ -1,10 +1,43 @@
 {
   "title": "Привет, я FrontEnd Разработчик",
-  "text": "Меня зовут Алекасндр, и я с августа 2023 года, начал постигать программирование в сфере FrontEnd\n Мой основной и пока едиственный язык програмирования это JavaScript",
+  "text": "Я начинающий веб-программист.\nС августа 2022 года, начал постигать программирование в сфере Frontend. Мой основной язык программирования JavaScript, использую библиотеку React для создания SPA приложений и использование JSX(TSX) компонентов.\nСтейт менеджер используется Redux ToolKit, а так же для асинхронного управлением и кешированием данных используется RTC Query.\n\nТак же параллельно начал изучать Backend, для большего понимания как строится Веб-приложение.\nРаботал с Node.js, библиотека ExpressJS, базу данных использовал как PostgreSQL, так и SQLite. Для обращение к БД использовал ORM Sequelize. Так же была изучена работа авторизации и аутентификации пользователя с помощью JWT токенов.\n\n В данный момент активно посвящаю изучению углублённого курса Frontend, а так же изучению Английского языка.",
   "img": "https://cdn.discordapp.com/attachments/1071988302971944982/1114248712831635456/Screenshot_3.png",
-  "BaseLang": ["JavaScript"],
-  "FrontEnd": ["Html","Css", "Scss", "TypeScript", "React", "Redux ToolKit", "ReactRouter","Axios", "AntDesign", "Mui", "WebPack" ],
-  "BackEnd": ["NodeJS", "ExpressJS","Sequelize","PostgresQL", "SQLite", "JWT"],
-  "DevOps": ["GitHub", "Git", "Docker", "Nginx"],
-  "Other": ["Npm","Postman", "Figma", "Photoshop", "VSCode", "Idea" ]
+  "ps": "Так же отдельная благодарность моему лучшему другу Герману, который мне помогал в начинаниях достижения в сфере программировании, как в хард скилах, так и в софт скилах, спасибо ему!",
+  "imgPs": "https://cdn.discordapp.com/attachments/1071988302971944982/1114592574070608024/JpBa3gChH74.jpg",
+  "BaseLang": [{"name": "JavaScript"}],
+  "FrontEnd": [
+    {"name": "Html"},
+    {"name": "Css"},
+    {"name": "Scss"},
+    {"name": "JavaScript"},
+    {"name": "TypeScript"},
+    {"name": "React"},
+    {"name": "ReactRouter"},
+    {"name": "Axios"},
+    {"name": "AntDesign"},
+    {"name": "Mui"},
+    {"name": "WebPack"}
+  ],
+  "BackEnd": [
+    {"name": "NodeJS"},
+    {"name": "ExpressJS"},
+    {"name": "Sequelize"},
+    {"name": "PostgresQL"},
+    {"name": "SQLite"},
+    {"name": "JWT"}
+  ],
+  "DevOps": [
+    {"name": "GitHub"},
+    {"name": "Git"},
+    {"name": "Docker"},
+    {"name": "Nginx"}
+  ],
+  "Other": [
+    {"name": "Npm"},
+    {"name": "Postman"},
+    {"name": "Figma"},
+    {"name": "Photoshop"},
+    {"name": "VSCode"},
+    {"name": "Idea"}
+  ]
 }

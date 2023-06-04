@@ -2,6 +2,8 @@
   padding: var(--space-size-m);
   display: flex;
   flex-direction: column;
+  white-space: pre-wrap;
+  line-height: 150%;
   gap: var(--space-size-m);
 
   & > div >h3 {
