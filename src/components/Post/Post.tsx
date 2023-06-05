@@ -27,13 +27,13 @@ export const Post = ({ video, title, text, img, timestampAt, hashtag, siteLink, 
                 <Picture video={video} img={img} />
                 <div className={styles.wrapper__iconsbox}>
                     {githubLink && (
-                        <a href={githubLink} target="_blank">
-                            <SiGithub title={"Репозиторий проекта"} />
+                        <a title={"Репозиторий проекта"} href={githubLink} target="_blank">
+                            <SiGithub />
                         </a>
                     )}
                     {siteLink && (
-                        <a href={siteLink} target="_blank">
-                            <HiLink title={"Демо проекта"} />
+                        <a title={"cсылка"} href={siteLink} target="_blank">
+                            <HiLink />
                         </a>
                     )}
                     <div>
