@@ -55,6 +55,7 @@
   }
 
   &__text {
+      white-space: pre-wrap;
       margin-bottom: var(--space-size-m);
   }
 }

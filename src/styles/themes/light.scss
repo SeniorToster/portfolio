@@ -1,4 +1,6 @@
 .app.light {
+  transition: all 0.1s ease-in-out;
+
   --bg-color: #ffff;
 
   --first-color: #0f1419;
@@ -7,4 +9,6 @@
 
   --hover-color: #f7f9f9;
   --button-color: #e2e6ea;
+
+
 }

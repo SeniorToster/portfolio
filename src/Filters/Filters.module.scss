@@ -1,0 +1,33 @@
+.filters {
+  padding:  0 var(--space-size-m);
+  display: flex;
+  justify-content: end;
+  gap: var(--space-size-m);
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-size-xs);
+    color: var(--second-color);
+    background-color: var(--hover-color);
+    padding: var(--space-size-s) var(--space-size-m);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: var(--first-color);
+      transition: color 0.1s ease-in-out;
+    }
+
+    & > svg {
+      width: 20px;
+      height: 20px;
+  }
+
+    & > p {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
