@@ -3,7 +3,7 @@ import { PostProps } from "../../types"
 
 import styles from "./PostsList.module.scss"
 import { useState } from "react"
-import { Filters } from "../../Filters/Filters.tsx"
+import { Filters } from "../Filters/Filters.tsx"
 
 export const PostsList = ({ data }: { data: PostProps[] }) => {
     const [posts, setPosts] = useState<PostProps[]>(data)
