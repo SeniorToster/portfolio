@@ -1,4 +1,4 @@
-import { PostProps } from "../types"
+import { PostProps } from "../../types"
 import React, { FC } from "react"
 import styles from "./Filters.module.scss"
 import { TbArrowsSort } from "react-icons/tb"
